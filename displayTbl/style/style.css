@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 ul {
   list-style: none;
 }
@@ -23,7 +24,7 @@ div#wrap {
 header#header {
   color: #fff;
   text-align: center;
-  background-color: #f3911b;
+  background-color: #f59127;
 }
 #header h1 {
   font-size: 80px;
@@ -31,28 +32,46 @@ header#header {
 #header h3 {
   font-weight: normal;
 }
+
 #header p {
   color: #000;
   height: 22px;
   font-size: 13px;
   line-height: 22px;
-  background-color: #b0b7a3;
+  background-color: #b3b6a3;
 }
 /* header#header 끝 */
 
 /* main#main 시작 */
+
+/* display: table 레이아웃 적용 시작 */
+main#main {
+  display: table;
+}
+#main div.tblRow {
+  display: table-row;
+}
+#main .tblCell {
+  vertical-align: top;
+  display: table-cell;
+}
+/* display: table 레이아웃 적용 끝 */
+
 /* nav#gnb 시작 */
+main#main nav#gnb {
+  width: 160px;
+}
+
 main#main nav#gnb h3 {
   color: #fff;
   font-weight: normal;
   padding: 6px;
-  background-color: #721c0e;
+  background-color: #641300;
 }
 
 nav#gnb ul#mainMenu {
   padding: 6px;
 }
-
 nav#gnb a {
   color: #000;
   font-size: 13px;
@@ -64,7 +83,7 @@ nav#gnb a {
 /* div#contents 시작 */
 div#contents {
   padding: 10px 8px 12px 6px;
-  background-color: #b0b7a3;
+  background-color: #b3b6a3;
 }
 
 div#contents article {
@@ -77,29 +96,30 @@ div#contents h3 {
   padding: 4px;
   background-color: #011920;
 }
-
 div#contents h4 {
   margin: 18px 0;
 }
-
 div#contents p {
   font-size: 12px;
 }
+
 /* div#contents 끝 */
 
 /* aside#notice 시작 */
+aside#notice {
+  width: 191px;
+  padding: 6px;
+}
+
 aside#notice div.schedule {
   margin: 12px 0;
 }
-
 aside#notice h2 span {
   text-decoration: underline;
 }
-
 aside#notice h2 span:first-child {
   color: #82877d;
 }
-
 aside#notice h2 span:nth-child(2) {
   color: #d39842;
 }
@@ -108,6 +128,7 @@ aside#notice h2 span:nth-child(2) {
   color: #000;
 }
 /* aside#notice 끝 */
+
 /* main#main 끝 */
 
 /* footer#footer 시작 */
@@ -118,5 +139,4 @@ footer#footer {
   padding: 8px;
   background-color: #07292f;
 }
-
 /* footer#footer 끝 */
